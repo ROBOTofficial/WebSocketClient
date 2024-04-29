@@ -54,8 +54,6 @@ export class WebSocket extends event.EventEmitter {
             })
             socket.on("close",() => this.emit("close"))
         })
-
-        this.emit("HELLO")
         
         this.req.end()
     }
